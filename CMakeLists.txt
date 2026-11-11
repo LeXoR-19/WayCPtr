@@ -17,23 +17,13 @@ find_package(sol2 REQUIRED)
 
 add_executable(waycptr 
     main.cpp
-
-    #---------------------- 
-    # --- panel/include ---
-    #---------------------- 
-    panel/include/panel-conf.hpp
-    panel/include/panel.hpp
-    
-    #--------------------- 
-    # --- panel/source ---
-    #--------------------- 
-    panel/source/panel.cpp 
 )
 
 target_include_directories(waycptr PUBLIC
     ${CMAKE_SOURCE_DIR}/panel/include
     ${CMAKE_SOURCE_DIR}/widgets/include
     ${CMAKE_SOURCE_DIR}/lua-engine/include
+    ${CMAKE_SOURCE_DIR}/controllers/include
 
     ${LUA_INCLUDE_DIR}
 )
