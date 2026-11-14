@@ -1,0 +1,9 @@
+#panel {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font", "Fira Code", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #d3c6aa;
+}
